@@ -12,7 +12,7 @@ sleep 3 &
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 
 # Things, we don't want to be public
-[ -f ./fluxbox/startup.private ] && source ~/.fluxbox/startup.private
+[ -f ~/.fluxbox/startup.private ] && source ~/.fluxbox/startup.private
 
 volumeicon &
 cbatticon &
