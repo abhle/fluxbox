@@ -1,0 +1,3 @@
+[submodule "styles/PerfectDay"]
+	path = styles/PerfectDay
+	url = git@github.com:abhle/PerfectDay.git
