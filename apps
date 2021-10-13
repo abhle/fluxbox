@@ -1,0 +1,59 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=X11-ssh-askpass) (class=SshAskpass) (role=dialog)
+  [Workspace]	{0}
+  [Position]	(CENTER)	{0 0}
+  [FocusNewWindow] {true}
+  [Layer]	{2}
+[end]
+[app] (name=Navigator) (class=Firefox) (role=browser)
+  [Workspace]	{0}
+  [Dimensions]	{971 770}
+  [Position]	(UPPERLEFT)	{0 0}
+  [FocusNewWindow] {false}
+  [Layer]	{8}
+[end]
+[app] (name=xterm) (class=XTerm) (title=SSH)
+  [Workspace]	{0}
+  [Position]	(UPPERLEFT)	{0 0}
+  [Maximized]	{YES}
+  [Deco]        {NONE}
+[end]
+[app] (name=xterm) (class=XTerm) (title=Mail@Home)
+  [Workspace]	{1}
+  [Position]	(UPPERLEFT)	{0 0}
+  [Maximized]	{vert}
+  [FocusNewWindow] {true}
+  [Deco]        {NONE}
+[end]
+[app] (name=xterm) (class=XTerm) (title=Mail@Work)
+  [Workspace]	{1}
+  [Position]	(UPPERLEFT)	{0 0}
+  [Maximized]	{vert}
+  [Deco]        {NONE}
+[end]
+[app] (name=xterm) (class=XTerm) (title=Edit)
+  [Workspace]	{2}
+  [Position]	(CENTER)	{0 0}
+  [Maximized]	{vert}
+  [Deco]        {NONE}
+[end]
+[app] (name=xterm) (class=XTerm) (title=Shell)
+  [Workspace]	{3}
+  [Maximized]	{YES}
+  [Deco]        {NONE}
+[end]
+[app] (name=xterm) (class=XTerm) (title=File)
+  [Workspace]	{4}
+  [Maximized]	{YES}
+  [Deco]        {NONE}
+[end]
+[group]
+[app] (name=xterm) (class=XTerm) (title=Shell)
+[end][group]
+[group]
+[app] (name=xterm) (class=XTerm) (title=Mail@Work)
+[app] (name=xterm) (class=XTerm) (title=Mail@Home)
+[end]

@@ -1,0 +1,45 @@
+#!/bin/bash
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+export MC_SKIN=$HOME/.config/mc/solarized.ini
+setxkbmap -layout de -variant nodeadkeys &
+sleep 3 &
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+
+# Things, we don't want to be public
+[ -f ./fluxbox/startup.private ] && source ~/.fluxbox/startup.private
+
+volumeicon &
+cbatticon &
+yad --title="Tag und Nacht" --center --border 0 --undecorated --button=Day:0 --button=Night:1
+
+if [ $? = 0 ]; then
+  fbsetroot -solid "#fdf6e3" &
+  xrdb -merge ~/.Xresources.d/Xresources.light
+else
+  fbsetroot -solid "#002b36" &
+  xrdb -merge ~/.Xresources.d/Xresources.dark
+fi
+
+xscreensaver -nosplash &
+
+xterm -T "Edit" &
+xterm -T "Mail@Home" &
+xterm -T "Mail@Work" &
+xterm -T "File" -e "mc && bash" &
+xterm -T "Shell" &
+xterm -T "Shell" &
+firefox -private &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+# exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/local/agrytz/.fluxbox/log"
+# or if you want to run a command after logout
+exec fluxbox
