@@ -12,6 +12,8 @@ Personal setup for a distraction free environment.
 
 * Uses [PerfectDay](https://github.com/abhle/PerfectDay) as style.
 
+* Requieres [Yad](https://github.com/v1cont/yad) for choice of theme.
+
 All of this could likely achieved easier and better with i3.
 
 I hammered this out a long time ago, and it worked for me. So, at 
