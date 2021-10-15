@@ -1,4 +1,4 @@
-# fluxbox
+# fluxbox-dfe
 
 Personal setup for a distraction free environment.
 
