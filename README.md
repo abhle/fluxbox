@@ -14,8 +14,7 @@ Personal setup for a distraction free environment.
 
 * Requires [Yad](https://github.com/v1cont/yad) for the sethe selection of theme.
 
-All of this could likely achieved easier and better with i3.
-
-I hammered this out a long time ago, and it worked for me. So, at 
-the moment, I see no need to change. This is meant to be a alternative,
-in a sense free software is meant to be.
+All of this could likely achieved easier and better with i3, but I 
+hammered this out a long time ago, and it worked for me. So, for now,
+I see no need to change. This is meant to be a alternative, in a sense
+free software is meant to be.
