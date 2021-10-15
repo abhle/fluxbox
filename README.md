@@ -6,7 +6,7 @@ Personal setup for a distraction free environment.
 
 * Borders are ommitted when possible.
 
-* Layout of windows is set as far as possible.
+* Layout of windows is fixed as far as possible.
 
 * Relies on [Solarized](https://ethanschoonover.com/solarized/).
 
